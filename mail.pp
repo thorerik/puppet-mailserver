@@ -1,5 +1,4 @@
 node default {
-    include zimbra
 
     class{"zimbra":
     }
