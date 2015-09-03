@@ -16,7 +16,7 @@
 #https://files.zimbra.com/downloads/8.6.0_GA/zcs-8.6.0_GA_1153.RHEL6_64.20141215151155.tgz
 class zimbra::params (
   /* use either url */
-  $download_package_url = 'https://files.zimbra.com/downloads/8.6.0_GA/zcs-8.6.0_GA_1153.RHEL6_64.20141215151155.tgz',
+  $download_package_url = 'https://files.zimbra.com/downloads/8.6.0_GA/zcs-8.6.0_GA_1153.RHEL7_64.20141215151110.tgz',
   /* download installer from RPM repo */
   $rpm_package      = undef,
   $rpm_package_url  = undef,
