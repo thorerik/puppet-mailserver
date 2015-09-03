@@ -1,0 +1,10 @@
+name 'verosk-puppet-zimbra'
+version '0.0.1'
+
+author 'Veros Kaplan'
+license 'Apache2'
+project_page 'http://www.github.com/RobQuistNL/puppet-zimbra'
+source 'https://github.com/RobQuistNL/puppet-zimbra'
+summary 'Puppet module for Zimbra mailserver'
+description 'This module installs and manages Zimbra mailserver. Check README for details.'
+dependency 'puppetlabs/stdlib', '>=4.0.0'
