@@ -1,5 +1,5 @@
 node default {
-    include puppet-zimbra
+    include zimbra
 
     class{"zimbra":
     }
