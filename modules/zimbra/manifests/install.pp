@@ -17,7 +17,7 @@ class zimbra::install (
   file {'/opt/zimbra-installer':
     ensure => directory,
   }
-  
+
   file {'/opt/zimbra-installer/install.conf':
     content => template('zimbra/install.conf.erb'),
     require => File['/opt/zimbra-installer'],
@@ -46,6 +46,7 @@ class zimbra::install (
       command => "wget -O ${zimbra_package_tmp} ${zimbra_package_url}",
       creates => $zimbra_package_tmp,
       timeout => 1800,
+      path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin',
     }
 
     exec {"zimbra::extract":
