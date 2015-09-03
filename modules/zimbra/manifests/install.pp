@@ -55,6 +55,7 @@ class zimbra::install (
       cwd      => "/opt/zimbra-installer",
       command  => "tar xfz ${zimbra_package_tmp} --strip-components=1",
       before   => Exec["zimbra::install"],
+      path => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin',
     }
   }
 
